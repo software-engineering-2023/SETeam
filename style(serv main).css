@@ -1,0 +1,329 @@
+/* The page format*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+/* -------------------------------------------------------------------------------------------------------*/
+/* The body and header*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('background.jpg') repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #4682a7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+/* -------------------------------------------------------------------------------------------------------*/
+/* The logo on the top left*/
+
+.logo{
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    user-select: none;
+}
+/* -------------------------------------------------------------------------------------------------------*/
+/* Navigation bar on open page*/
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+} 
+
+/* -------------------------------------------------------------------------------------------------------*/
+/* Pictures */
+
+.picture{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.picture .creditCard{
+
+    height: 300px;
+    width: 300px;
+    display: block;
+}
+
+.picture .btn{
+    width: 100%;
+    height: 45px;
+    background: #144c72;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    display: block;
+}
+
+.picture2{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 600px;
+}
+
+.picture2 .loan{
+    height: 300px;
+    width: 300px;
+}
+
+.picture2 .btn2{
+    width: 100%;
+    height: 45px;
+    background: #144c72;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    display: block;
+}
+
+.picture3{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 980px;
+}
+
+.picture3 .transactions{
+
+    height: 300px;
+    width: 300px;
+}
+
+.picture3 .btn3{
+    width: 100%;
+    height: 45px;
+    background: #144c72;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    display: block;
+}
+
+.picture4{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 1360px;
+}
+
+.picture4 .transactions2{
+    height: 300px;
+    width: 300px;
+    top: 100px;
+}
+
+.picture4 .btn4{
+    width: 100%;
+    height: 45px;
+    background: #144c72;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    display: block;
+}
+
+.picture6{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 1750px;
+}
+
+.picture6 .points{
+    height: 300px;
+    width: 300px;
+    top: 100px;
+}
+
+.picture6 .btn6{
+    width: 100%;
+    height: 45px;
+    background: #144c72;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    display: block;
+}
+
+.picture7{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 2140px;
+}
+
+.picture7 .CCBill{
+    height: 300px;
+    width: 300px;
+    top: 100px;
+}
+
+.picture7 .btn7{
+    width: 100%;
+    height: 45px;
+    background: #144c72;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    display: block;
+}
+
+.picture8{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 2520px;
+}
+
+.picture8 .moneyTransfer{
+    height: 300px;
+    width: 300px;
+    top: 100px;
+}
+
+.picture8 .btn8{
+    width: 100%;
+    height: 45px;
+    background: #144c72;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    display: block;
+}
+
+.picture9{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 2900px;
+}
+
+.picture9 .payUtil{
+    height: 300px;
+    width: 300px;
+    top: 100px;
+}
+
+.picture9 .btn9{
+    width: 100%;
+    height: 45px;
+    background: #144c72;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    display: block;
+}
+
+.picture10{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 3300px;
+}
+
+.picture10 .CCReplacement{
+    height: 300px;
+    width: 300px;
+    top: 100px;
+}
+
+.picture10 .btn10{
+    width: 100%;
+    height: 45px;
+    background: #144c72;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    display: block;
+}
+
+/* -------------------------------------------------------------------------------------------------------*/
