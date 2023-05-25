@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bank -> Services</title>
+  <link rel="stylesheet" href="style(serv).css">
+</head>
+
+<body>
+
+  <header>
+    <h2 class="logo">Bank</h2>
+
+    <nav class="navigation">
+      <a paragraph onclick="goHomeLogin()">Home</a>
+      <a paragraph="#">About</a>
+      <a paragraph="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="picture">
+    <img class="creditCard" src="C:\Users\karim\Desktop\ddd\credit card.jpg"> </img>
+    <button type="submit" class="btn">Apply for a credit card</button>
+  </div>
+
+  <div class="picture2">
+    <img class="loan" src="C:\Users\karim\Desktop\ddd\loan.jpg"> </img>
+    <button type="submit" class="btn2">Apply for a loan</button>
+  </div>
+
+  <div class="picture3">
+    <img class="transactions" src="C:\Users\karim\Desktop\ddd\Transactions.png"> </img>
+    <button type="submit" class="btn3">Show bank transactions</button>
+  </div>
+
+  <div class="picture4">
+    <img class="transactions2" src="C:\Users\karim\Desktop\ddd\Transactions.png"> </img>
+    <button type="submit" class="btn4">Show credit card transactions</button>
+  </div>
+
+  <!-- <div class="picture5">
+            <img class="cashBack"
+            src="C:\Users\karim\Desktop\ddd\Cashback.jpg">  </img> 
+            <button type="submit" class="btn3">Show credit card transactions</button> 
+        </div> -->
+
+  <div class="picture6">
+    <img class="points" src="C:\Users\karim\Desktop\ddd\Points.jpg"> </img>
+    <button type="submit" class="btn6">Show credit card points</button>
+  </div>
+
+  <div class="picture7">
+    <img class="CCBill" src="C:\Users\karim\Desktop\ddd\pay CC bil.png"> </img>
+    <button type="submit" class="btn7">Pay credit card bill</button>
+  </div>
+
+  <div class="picture8">
+    <img class="moneyTransfer" src="C:\Users\karim\Desktop\ddd\money transfer.jpg"> </img>
+    <button type="submit" class="btn8">Transfer money</button>
+  </div>
+
+  <div class="picture9">
+    <img class="payUtil" src="C:\Users\karim\Desktop\ddd\pay CC bil.png"> </img>
+    <button type="submit" class="btn9">Pay for utilities</button>
+  </div>
+
+  <div class="picture10">
+    <img class="CCReplacement" src="C:\Users\karim\Desktop\ddd\CC replacement.png"> </img>
+    <button type="submit" class="btn10">Apply for credit card replacement</button>
+  </div>
+
+  <div class="wrapper">
+    <span class="icon-close">
+      <ion-icon name="close"></ion-icon>
+    </span>
+
+    <div class="form-box apply">
+      <h2>Apply for a credit card</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="Email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="person"></ion-icon>
+          </span>
+          <input type="text" required>
+          <label>First Name</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="person"></ion-icon>
+          </span>
+          <input type="text" required>
+          <label>Last Name</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="call"></ion-icon>
+          </span>
+          <input type="number" required>
+          <label>Phone Number</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="id-card"></ion-icon>
+          </span>
+          <input type="number" required>
+          <label>National ID</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="wallet"></ion-icon>
+          </span>
+          <input type="number" required>
+          <label>Net Income per Month</label>
+        </div>
+        <button type="submit" class="btn">Apply</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="wrapper2">
+    <span class="icon-close2">
+      <ion-icon name="close"></ion-icon>
+    </span>
+
+    <div class="form-box loan">
+      <h2>Apply for a loan</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="Email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="person"></ion-icon>
+          </span>
+          <input type="text" required>
+          <label>First Name</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="person"></ion-icon>
+          </span>
+          <input type="text" required>
+          <label>Last Name</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="call"></ion-icon>
+          </span>
+          <input type="number" required>
+          <label>Phone Number</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="id-card"></ion-icon>
+          </span>
+          <input type="number" min="10000000000000" max="99999999999999" required>
+          <label>National ID</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="wallet"></ion-icon>
+          </span>
+          <input type="number" required>
+          <label>Amount</label>
+        </div>
+        <div class="select">
+          <label>Choose type</label>
+          <select name="type" required>
+            <option value="personal">Personal</option>
+            <option value="car">Car</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Apply</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="wrapper8">
+    <span class="icon-close8">
+      <ion-icon name="close"></ion-icon>
+    </span>
+
+    <div class="form-box Transfer">
+      <h2>Transfer money (Same Bank)</h2>
+      <form action="#">
+
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="person"></ion-icon>
+          </span>
+          <input type="number" required>
+          <label>Your Account's ID</label>
+        </div>
+
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="Email" required>
+          <label>Other Account's Email</label>
+        </div>
+
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="person"></ion-icon>
+          </span>
+          <input type="text" required>
+          <label>Other Account's Full Name</label>
+        </div>
+
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="person"></ion-icon>
+          </span>
+          <input type="number" required>
+          <label>Other Account's ID</label>
+        </div>
+
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="wallet"></ion-icon>
+          </span>
+          <input type="number" required>
+          <label>Amount</label>
+        </div>
+
+        <div class="diff-bank">
+          <p><a href="#" class="diffB-link">Different Bank</a></p>
+        </div>
+
+        <button type="submit" class="btn">Transfer</button>
+      </form>
+    </div>
+
+    <div class="form-box TransferD">
+      <h2>Transfer money (Different Bank)</h2>
+      <form action="#">
+
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="person"></ion-icon>
+          </span>
+          <input type="text" required>
+          <label>Bank's Name</label>
+        </div>
+
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="person"></ion-icon>
+          </span>
+          <input type="number" required>
+          <label>Your Account's ID</label>
+        </div>
+
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="Email" required>
+          <label>Other Account's Email</label>
+        </div>
+
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="person"></ion-icon>
+          </span>
+          <input type="text" required>
+          <label>Other Account's Full Name</label>
+        </div>
+
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="person"></ion-icon>
+          </span>
+          <input type="number" required>
+          <label>Other Account's ID</label>
+        </div>
+
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="wallet"></ion-icon>
+          </span>
+          <input type="number" required>
+          <label>Amount</label>
+        </div>
+
+        <div class="same-bank">
+          <p><a href="#" class="diffB-link">Same Bank</a></p>
+        </div>
+
+        <button type="submit" class="btn">Transfer</button>
+      </form>
+    </div>
+
+  </div>
+
+
+
+
+  <script src="script(serv).js"> </script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
