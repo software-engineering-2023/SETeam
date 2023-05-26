@@ -680,3 +680,58 @@ header{
     text-decoration: underline;
 }
 
+.wrapper9 {
+    position: fixed;
+    width: 400px;
+    height: 440px;
+    background: white;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+    z-index: 1000;
+}
+
+.wrapper9.active-popup{
+    transform: scale(1);
+}
+
+.wrapper9.active{
+    height: 100%;
+}
+
+.wrapper9 .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper9 .icon-close9{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #144c72;
+    font-size: 1.5em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.form-box h2{
+    font-size: 2em;
+    color: #144c72;
+    text-align: center;
+    padding-bottom: 120px;
+}
+

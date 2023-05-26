@@ -45,3 +45,7 @@ cancelReminder.addEventListener('click',()=>{
 const goServLogin = () => {
     window.location = "./Services.html" 
 }   
+
+const goAccInfo =() =>{
+    window.location = "./accountInfo.html"
+}

@@ -47,3 +47,15 @@ iconClose8.addEventListener('click',()=>{
 const goHomeLogin = () => {
     window.location = "./Page2.html" 
 }   
+
+const wrapper9 = document.querySelector('.wrapper9');
+const btnPopup9 = document.querySelector('.btn9');
+const iconClose9 = document.querySelector('.icon-close9');
+
+btnPopup9.addEventListener('click',()=>{
+    wrapper9.classList.add('active-popup');
+})
+
+iconClose9.addEventListener('click',()=>{
+    wrapper9.classList.remove('active-popup');
+})

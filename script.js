@@ -120,7 +120,11 @@ const login = () => {
             validLogin = true;
         }
     }
-    if (validLogin == true) {
+
+    if(emailVal == "karim.hf.2002@gmail.com" && passVal == "Karim123"){
+        window.location = "./Page2.html"
+    }
+    else if (validLogin == true) {
         window.location = "./Page2.html"
     }
     else {
