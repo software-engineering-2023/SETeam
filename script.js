@@ -135,3 +135,7 @@ const login = () => {
 const servicesMain = () => {
     window.location = "./Services(main).html"
 }   
+
+const contactMain = () =>{
+    window.location = "./contactUs.html"
+}

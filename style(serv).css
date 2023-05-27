@@ -431,6 +431,7 @@ header{
     font-size: 2em;
     color: #144c72;
     text-align: center;
+    margin-bottom: -130px;
 }
 
 .input-box{
@@ -439,6 +440,7 @@ header{
     height: 50px;
     border-bottom: solid #144c72;
     margin: 30px 0;
+   
 }
 
 .input-box label{
@@ -467,7 +469,7 @@ header{
     font-size: 1em;
     color: #144c72;
     font-weight: 600;
-    padding: 0 35px 0 5px;
+    /* padding: 0 35px 0 5px; */
 }
 
 .input-box .icon{
@@ -733,5 +735,11 @@ header{
     color: #144c72;
     text-align: center;
     padding-bottom: 120px;
+}
+
+.select{
+    /* margin-bottom: -30px; */
+    padding-top: 20px;
+
 }
 

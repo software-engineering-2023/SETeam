@@ -14,7 +14,7 @@
         <nav class="navigation">
             <a paragraph="#">About</a>
             <a paragraph onclick="goServLogin()">Services</a>
-            <a paragraph="#">Contact</a>
+            <a paragraph onclick="contactLogin()">Contact</a>
             <button class="notifications-popup"><ion-icon name="notifications"></ion-icon></button>
             <button class="Account-popup"><ion-icon name="person"></ion-icon></button>
         </nav>
@@ -29,7 +29,7 @@
             <h2>Account</h2>
             <button type="submit" onclick="goAccInfo()" class="btn1">Account Information</button>
             <button type="submit" class="btn2" onclick="goAccInfo()">Something</button>
-            <button type="submit" class="btn3">Something</button>
+            <button type="submit" onclick="signOut()" class="btn3">Sign Out</button>
             <div class="delete-link">
                 <p><a href="#" class="delete"> Delete Account</a></p>
             </div>
@@ -69,7 +69,7 @@
                 <div class="sure">
                     <label><input type="checkbox" required> Are you sure you want to delete this account?</label>
                 </div>
-                <button type="submit" class="btn">Delete</button>
+                <button type="submit" onclick="signOut()" class="btn">Delete</button>
                 <div class="Cancel">
                     <p><a href="#" class="login-link">Cancel</a></p>
                 </div>

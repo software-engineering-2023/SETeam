@@ -59,3 +59,7 @@ btnPopup9.addEventListener('click',()=>{
 iconClose9.addEventListener('click',()=>{
     wrapper9.classList.remove('active-popup');
 })
+
+const contactLogin = () => {
+    window.location = "./contactLogin.html" 
+}  
