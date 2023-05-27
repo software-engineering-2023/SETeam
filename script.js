@@ -94,12 +94,11 @@ const register = () => {
     //     unique = false;
     //     alert('Please choose the city you live in')
     // }
-
     if (unique == true) {
         accounts = [...accounts, account]
         console.log(passVal)
         localStorage.setItem('accounts', JSON.stringify(accounts))
-
+        
     }
     else {
         alert('This email or national ID is already in use ')
