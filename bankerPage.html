@@ -33,7 +33,13 @@
 
   <div class="image">
     <img class="cardApps" src="announce.png" width="250px" height="250px"> </img>
-    <button type="submit" class="btn_bank" onclick="viewRequests()">Make An Announcement</button>
+    <button class = "btn" onclick="document.getElementById('popup').showModal()">Make An Announcement</button>
+
+<dialog class id="popup">
+  <h2>Popup Title</h2>
+  <p>This is the content of the popup.</p>
+  <button onclick="document.getElementById('popup').close()">Close</button>
+</dialog>
   </div>
 
  </div>
