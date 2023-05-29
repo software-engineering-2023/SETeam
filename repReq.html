@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bank</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h2 class="logo">Bank</h2>
+
+    <nav class="navigation">
+      <a paragraph="#">About</a>
+      <a paragraph onclick="location.href='bankerPage.html'">Services</a>
+      <button class="btnLogin-popup" onclick="location.href='main.html'">Logout</button>
+    </nav>
+  </header>
+  <table class="tab" border="1" cellpadding="5" cellspacing="0" width="500" style="margin-top: 65px;">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>National ID</th>
+        <th>Card Number</th>
+        <th>Reason</th>
+        <th>Decision</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Jane Smith</td>
+        <td>18405357395321</td>
+        <td>4073809361036283</td>
+        <td>My card was stolen</td>
+        <td><button id = "bt1"  onclick="accResolve(this,document.getElementById('bt2'),document.getElementById('bt3'))" class="repbtn">Replace</button>
+            <button id="bt2" onclick="frzResolve(document.getElementById('bt1'),this,document.getElementById('bt3'))"class="repbtn3">Freeze & Replace</button>
+        <button id="bt3" onclick="rejResolve(document.getElementById('bt1'),document.getElementById('bt2'),this)" class="repbtn2">Reject</button></td>
+      </tr>
+      <tr>
+        <td>John Smith</td>
+        <td>12475925194053</td>
+        <td>57412941029471</td>
+        <td>$30,000</td>
+        <td><button id = "bt4"  onclick="accResolve(this,document.getElementById('bt5'),document.getElementById('bt6'))" class="repbtn">Replace</button>
+            <button id="bt5" onclick="frzResolve(document.getElementById('bt4'),this,document.getElementById('bt6'))"class="repbtn3">Freeze & Replace</button>
+        <button id="bt6" onclick="rejResolve(document.getElementById('bt4'),document.getElementById('bt5'),this)" class="repbtn2">Reject</button></td>
+      </tr>
+      <tr>
+        <td>Ahmed Aly</td>
+        <td>13956392804862</td>
+        <td>40352794725341</td>
+        <td>$20,000</td>
+        <td><button id = "bt7"  onclick="accResolve(this,document.getElementById('bt8'),document.getElementById('bt9'))" class="repbtn">Replace</button>
+            <button id="bt8" onclick="frzResolve(document.getElementById('bt7'),this,document.getElementById('bt9'))"class="repbtn3">Freeze & Replace</button>
+        <button id="bt9" onclick="rejResolve(document.getElementById('bt7'),document.getElementById('bt8'),this)" class="repbtn2">Reject</button></td>
+      </tr>
+      <tr>
+        <td>Mariam Emad</td>
+        <td>13450792640242</td>
+        <td>57412941029471</td>
+        <td>$15,000</td>
+        <td><button id = "bt10"  onclick="accResolve(this,document.getElementById('bt11'),document.getElementById('bt12'))" class="repbtn">Replace</button>
+            <button id="bt11" onclick="frzResolve(document.getElementById('bt10'),this,document.getElementById('bt12'))"class="repbtn3">Freeze & Replace</button>
+        <button id="bt12" onclick="rejResolve(document.getElementById('bt10'),document.getElementById('bt11'),this)" class="repbtn2">Reject</button></td>
+      </tr>
+      <tr>
+        <td>Ahmed Hossam</td>
+        <td>24057359370236</td>
+        <td>52047856389620</td>
+        <td>$40,000</td>
+        <td><button id = "bt13"  onclick="accResolve(this,document.getElementById('bt14'),document.getElementById('bt15'))" class="repbtn">Replace</button>
+            <button id="bt14" onclick="frzResolve(document.getElementById('bt13'),this,document.getElementById('bt15'))"class="repbtn3">Freeze & Replace</button>
+        <button id="bt15" onclick="rejResolve(document.getElementById('bt13'),document.getElementById('bt14'),this)" class="repbtn2">Reject</button></td>
+      </tr>
+      <tr>
+        <td>Mostafa Hussein</td>
+        <td>30130946745293</td>
+        <td>49058962842245</td>
+        <td>$150,000</td>
+        <td><button id= "bt16"  onclick="accResolve(this,document.getElementById('bt17'),document.getElementById('bt18'))" class="repbtn">Replace</button>
+            <button id="bt17" onclick="frzResolve(document.getElementById('bt16'),this,document.getElementById('bt18'))"class="repbtn3">Freeze & Replace</button>
+        <button id="bt18" onclick="rejResolve(document.getElementById('bt16'),document.getElementById('bt17'),this)" class="repbtn2">Reject</button></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+<script src="script(banker).js"> </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
