@@ -96,6 +96,7 @@ const register = () => {
   //     unique = false;
   //     alert('Please choose the city you live in')
   // }
+
   if (unique == true) {
     accounts = [...accounts, account];
     console.log(passVal);
@@ -110,6 +111,7 @@ const login = () => {
   const passVal = passElement.value;
   let emailElement = document.getElementById("Login-email");
   const emailVal = emailElement.value;
+
   let validLogin = false;
   const accounts = JSON.parse(localStorage.getItem("accounts"));
   for (let i = 0; i < accounts.length; i++) {
@@ -117,7 +119,10 @@ const login = () => {
       validLogin = true;
     }
   }
-  if (validLogin == true && !(passElement == 123123)) {
+
+  if (emailVal == "karim.hf.2002@gmail.com" && passVal == "Karim123") {
+    window.location = "./Page2.html";
+  } else if (validLogin == true) {
     window.location = "./Page2.html";
   } else {
     alert("Wrong email or password");
@@ -126,6 +131,10 @@ const login = () => {
 
 const servicesMain = () => {
   window.location = "./Services(main).html";
+};
+
+const contactMain = () => {
+  window.location = "./contactUs.html";
 };
 function changeIconx(green, red) {
   green.disabled = true;

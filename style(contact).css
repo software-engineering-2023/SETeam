@@ -1,0 +1,144 @@
+/* The page format*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+/* -------------------------------------------------------------------------------------------------------*/
+/* The body and header*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('background.jpg') repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #4682a7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+/* -------------------------------------------------------------------------------------------------------*/
+/* The logo on the top left*/
+
+.logo{
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    user-select: none;
+}
+/* -------------------------------------------------------------------------------------------------------*/
+/* Navigation bar on open page*/
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+} 
+
+.navigation .notifications-popup{
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .notifications-popup:hover{
+    background: #fff;
+    color: #4682a7;
+}
+
+/* -------------------------------------------------------------------------------------------------------*/
+/*wrapper conatct us*/
+
+.wrapper {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.contact h2{
+    font-size: 2.5em;
+    color: #144c72;
+    text-align: center;
+    position: relative;
+    padding-bottom: 40px;
+    font-weight: bolder;
+}
+
+.wrapper .contact .text label{
+    font-size: 1.7em;
+    padding-bottom: 15px;
+    padding-top:10px;
+    color: #144c72;
+    font-weight: bold;
+}
+
+.wrapper .contact .text label2{
+    font-size: 1.3em;
+    padding-bottom: 15px;
+    padding-top:10px;
+    color: #144c72;
+}
+
+.contact .icon {
+
+
+    font-size: 1.5em;
+    color: #144c72;
+    line-height: 57px;
+}

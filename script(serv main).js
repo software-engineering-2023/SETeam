@@ -5,3 +5,7 @@ const loginFirstAlert = () => {
 const goHome = () => {
     window.location = "./main.html" 
 }
+
+const contactMain = () => {
+    window.location = "./contactUs.html" 
+}

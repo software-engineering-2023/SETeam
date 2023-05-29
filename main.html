@@ -1,145 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Bank</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <title>Bank</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <header>
+      <h2 class="logo">Bank</h2>
 
-<body>
+      <nav class="navigation">
+        <a paragraph="#">About</a>
+        <a paragraph onclick="servicesMain()">Services</a>
+        <a paragraph onclick="contactMain()">Contact</a>
+        <button class="staff-popup">Employee</button>
+        <button class="btnLogin-popup">Login</button>
+      </nav>
+    </header>
 
-  <header>
-    <h2 class="logo">Bank</h2>
+    <div class="wrapper">
+      <span class="icon-close">
+        <ion-icon name="close"></ion-icon>
+      </span>
 
-    <nav class="navigation">
-      <a paragraph="#">About</a>
-      <a paragraph onclick="servicesMain()">Services</a>
-      <a paragraph="#">Contact</a>
-      <button class="staff-popup">Employee</button>
-      <button class="btnLogin-popup">Login</button>
-    </nav>
-  </header>
-
-  <div class="wrapper">
-    <span class="icon-close">
-      <ion-icon name="close"></ion-icon>
-    </span>
-
-    <div class="form-box login">
-      <h2>Login</h2>
-      <div class="input-box">
-        <span class="icon"><ion-icon name="mail"></ion-icon></span>
-        <input id="Login-email" type="email" required>
-        <label>Email</label>
-      </div>
-      <div class="input-box">
-        <span class="icon">
-          <ion-icon name="lock-closed"></ion-icon>
-        </span>
-        <input id="Login-password" type="password" required>
-        <label>Password</label>
-      </div>
-      <div class="remember-forgot">
-        <label><input type="checkbox">Remember me</label>
-      </div>
-      <button type="submit" class="btn" onclick="login()">Login</button>
-      <div class="login-register">
-        <p>Don't have an account?<a href="#" class="register-link"> Register</a></p>
-      </div>
-    </div>
-
-    <div class="form-box register">
-      <h2>Registeration</h2>
-      <div class="input-box">
-        <span class="icon">
-          <ion-icon name="mail"></ion-icon>
-        </span>
-        <input type="email" id="email" required>
-        <label>Email</label>
-      </div>
-      <div class="input-box">
-        <span class="icon">
-          <ion-icon name="lock-closed"></ion-icon>
-        </span>
-        <input type="password" id="pass" required>
-        <label>Password</label>
-      </div>
-      <div class="input-box" id="NID">
-        <span class="icon">
-          <ion-icon name="id-card"></ion-icon>
-        </span>
-        <input type="number" min="10000000000000" max="99999999999999" required value="0">
-        <label>National ID</label>
-      </div>
-      <div class="input-box" id="PN">
-        <span class="icon">
-          <ion-icon name="call"></ion-icon>
-        </span>
-        <input type="number" required>
-        <label>Phone Number</label>
-      </div>
-      <div class="input-box" id="BD">
-        <input type="date" required>
-        <label>Birth Date</label>
-      </div>
-      <div class="select" id="city">
-        <label>Choose City</label>
-        <select name="type" required>
-          <option value="O1">New Cairo</option>
-          <option value="O2">Nasr City</option>
-          <option value="O3">Madinaty</option>
-          <option value="O4">Rehab</option>
-          <option value="O5">Shorouk</option>
-          <option value="O6">Misr Al-Gadida</option>
-          <option value="O7">Mokatam</option>
-          <option value="O8">Shorouk</option>
-        </select>
-      </div>
-      <div class="remember-forgot">
-        <label><input type="checkbox"> Agree to the terms & conditions</label>
-      </div>
-      <button type="submit" class="btn" onclick="register()">Register</button>
-      <div class="login-register">
-        <p>Already have an account?<a href="#" class="login-link"> Login</a></p>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="wrapper2">
-    <span class="icon-close2">
-      <ion-icon name="close"></ion-icon>
-    </span>
-
-    <div class="form-box login">
-      <h2>Staff Login</h2>
-      <form action="#">
+      <div class="form-box login">
+        <h2>Login</h2>
         <div class="input-box">
           <span class="icon"><ion-icon name="mail"></ion-icon></span>
-          <input type="text" required>
-          <label>Username</label>
+          <input id="Login-email" type="email" required />
+          <label>Email</label>
         </div>
         <div class="input-box">
           <span class="icon">
             <ion-icon name="lock-closed"></ion-icon>
           </span>
-          <input type="password" required>
+          <input id="Login-password" type="password" required />
           <label>Password</label>
         </div>
         <div class="remember-forgot">
-          <label><input type="checkbox">
-            Remember me</label>
+          <label><input type="checkbox" />Remember me</label>
         </div>
-        <button type="submit" class="btn">Login</button>
-      </form>
+        <button type="submit" class="btn" onclick="login()">Login</button>
+        <div class="login-register">
+          <p>
+            Don't have an account?<a href="#" class="register-link">
+              Register</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="form-box register">
+        <h2>Registeration</h2>
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="mail"></ion-icon>
+          </span>
+          <input type="email" id="email" required />
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="lock-closed"></ion-icon>
+          </span>
+          <input type="password" id="pass" required />
+          <label>Password</label>
+        </div>
+        <div class="input-box" id="NID">
+          <span class="icon">
+            <ion-icon name="id-card"></ion-icon>
+          </span>
+          <input
+            type="number"
+            min="10000000000000"
+            max="99999999999999"
+            required
+            value="0"
+          />
+          <label>National ID</label>
+        </div>
+        <div class="input-box" id="PN">
+          <span class="icon">
+            <ion-icon name="call"></ion-icon>
+          </span>
+          <input type="number" required />
+          <label>Phone Number</label>
+        </div>
+        <div class="input-box" id="BD">
+          <input type="date" required />
+          <label>Birth Date</label>
+        </div>
+        <div class="select" id="city">
+          <label>Choose City</label>
+          <select name="type" required>
+            <option value="O1">New Cairo</option>
+            <option value="O2">Nasr City</option>
+            <option value="O3">Madinaty</option>
+            <option value="O4">Rehab</option>
+            <option value="O5">Shorouk</option>
+            <option value="O6">Misr Al-Gadida</option>
+            <option value="O7">Mokatam</option>
+            <option value="O8">Shorouk</option>
+          </select>
+        </div>
+        <div class="remember-forgot">
+          <label
+            ><input type="checkbox" /> Agree to the terms & conditions</label
+          >
+        </div>
+        <button type="submit" class="btn" onclick="register()">Register</button>
+        <div class="login-register">
+          <p>
+            Already have an account?<a href="#" class="login-link"> Login</a>
+          </p>
+        </div>
+      </div>
     </div>
 
-  </div>
+    <div class="wrapper2">
+      <span class="icon-close2">
+        <ion-icon name="close"></ion-icon>
+      </span>
 
+      <div class="form-box login">
+        <h2>Staff Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="text" required />
+            <label>Username</label>
+          </div>
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="lock-closed"></ion-icon>
+            </span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox" /> Remember me</label>
+          </div>
+          <button type="submit" class="btn">Login</button>
+        </form>
+      </div>
+    </div>
 
-
-
-  <script src="script.js"> </script>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
