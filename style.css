@@ -556,3 +556,26 @@ header {
     margin-top: 12%;
 
 }
+.AdminButton {
+    width: 100%;
+    height: 45px;
+    background: #144c72;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.AdminMenu {
+    width: 20%;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: 500;
+}
