@@ -122,25 +122,26 @@ header {
 /* client login */
 
 .wrapper {
-    position: absolute;
-    width: 400px;
-    height: 440px;
-    background: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transform: scale(0);
-    transition: transform .5s ease, height .2s ease;
-    z-index: 200;
+    position: fixed;
+        width: 400px;
+        height: 440px;
+        background: transparent;
+        border: 2px solid #ffffff;
+        border-radius: 20px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transform: scale(0);
+        transition: transform .5s ease, height .2s ease;
+        top: 50%;
+        left: 50%;
 }
 
 .wrapper.active-popup {
-    transform: scale(1);
+    transform: scale(1) translate(-50%, -50%);
 }
 
 .wrapper.active {
@@ -312,20 +313,22 @@ header {
 /* Employee login popup */
 
 .wrapper2 {
-    position: absolute;
-    width: 400px;
-    height: 440px;
-    background: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transform: scale(0);
-    transition: transform .5s ease, height .2s ease;
+    position: fixed;
+        width: 400px;
+        height: 440px;
+        background: transparent;
+        border: 2px solid #ffffff;
+        border-radius: 20px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transform: scale(0);
+        transition: transform .5s ease, height .2s ease;
+        top: 50%;
+        left: 50%;
 }
 
 .wrapper2 .icon-close2 {
@@ -346,7 +349,7 @@ header {
 }
 
 .wrapper2.active-popup {
-    transform: scale(1);
+    transform: scale(1) translate(-50%, -50%);
 }
 
 .wrapper2.active {

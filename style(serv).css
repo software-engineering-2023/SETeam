@@ -1111,3 +1111,19 @@ label {
             color: #144c72;
             font-weight: bold;
         }
+.services-wrapper {
+    padding: 25px;
+    margin-top: 150px !important;
+
+}
+
+.services-wrapper div {
+    position: unset;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.services-wrapper img {
+    width: 100% !important;
+    object-fit: cover;
+}
