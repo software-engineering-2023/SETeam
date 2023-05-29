@@ -1058,3 +1058,99 @@ label {
     background-color: #4682a7;
     color: white;
 }
+.wrapper3 {
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    backdrop-filter: blur(25px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+    z-index: 1000;
+}
+
+.wrapper3.active-popup{
+    transform: scale(1);
+}
+
+.wrapper3 .icon-close3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #144c72;
+    font-size: 1.5em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+table{
+    width: 500px;
+    color: #144c72;
+    border-spacing: 2px;
+    border-collapse: collapse;
+}
+
+table th{
+    padding: 10px;
+    border: 2px solid #696969;
+    background-color: #dbdbdb;
+}
+
+table thead th{
+    background-color: #144c72;
+    color: #dbdbdb;
+    border: 2px solid #696969;
+}
+
+.wrapper4 {
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    backdrop-filter: blur(25px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+    z-index: 1000;
+}
+
+.wrapper4.active-popup{
+    transform: scale(1);
+}
+
+.wrapper4 .icon-close4{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #144c72;
+    font-size: 1.5em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
