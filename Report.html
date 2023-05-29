@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bank -> Report a tech isuue</title>
+    <link rel="stylesheet" href="style(RepTechIssue).css" />
+  </head>
+
+  <body>
+    <header>
+      <h2 class="logo">Bank</h2>
+
+      <nav class="navigation">
+        <a paragraph onclick="goHomeLogin()">Home</a>
+        <a paragraph="#">About</a>
+        <a paragraph onclick="goServMain()">Services</a>
+        <a paragraph onclick="goContact()">Contact</a>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <div class="report">
+        <h2>Report a technical issue</h2>
+
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="clipboard-outline"></ion-icon>
+          </span>
+          <textarea rows="18 " cols="101"></textarea>
+          <label>Description</label>
+        </div>
+        <button type="submit" class="btn">Submit report</button>
+      </div>
+    </div>
+
+    <div class="wrapper2">
+      <span class="icon-close">
+        <ion-icon name="close"></ion-icon>
+      </span>
+      <label>Report was submitted successfully! </label>
+    </div>
+
+    <script src="script(RepTechIssue).js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
