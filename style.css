@@ -450,6 +450,8 @@ header {
  border-radius: 5px;
  font-size: 12px;
  height: 30px;
+ width: 50px;
+ color: white;
 }
 .tab td .repbtn2{
     background-color: rgb(255, 0, 0);
@@ -457,6 +459,8 @@ header {
     font-size: 12px;
     border-color: lightcoral;
     height: 30px;
+    color: white;
+    width: 40px;
    }
    .tab td .repbtn3{
     background-color: rgb(3, 228, 221);
@@ -464,6 +468,8 @@ header {
     font-size: 12px;
     border-color: lightcoral;
     height: 30px;
+    width: 100px;
+    color: white;
    }
 .pop{
     width: 30%;
