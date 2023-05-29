@@ -120,7 +120,11 @@ const login = () => {
     }
   }
 
-  if (emailVal == "karim.hf.2002@gmail.com" && passVal == "Karim123") {
+  if (emailVal == "admin@gmail.com" && passVal == "admin") {
+    window.location = "./Admin.html";
+  } else if (emailVal == "banker@gmail.com" && passVal == "banker") {
+    window.location = "./bankerPage.html";
+  } else if (emailVal == "karim.hf.2002@gmail.com" && passVal == "Karim123") {
     window.location = "./Page2.html";
   } else if (validLogin == true) {
     window.location = "./Page2.html";
