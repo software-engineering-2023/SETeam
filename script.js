@@ -111,7 +111,6 @@ const login = () => {
     const passVal = passElement.value
     let emailElement = document.getElementById('Login-email')
     const emailVal = emailElement.value
-
     let validLogin = false;
     const accounts = JSON.parse(localStorage.getItem('accounts'))
     for (let i = 0; i < accounts.length; i++) {
@@ -119,7 +118,7 @@ const login = () => {
             validLogin = true;
         }
     }
-    if (validLogin == true) {
+    if (validLogin == true && !(passElement==123123)) {
         window.location = "./Page2.html"
     }
     else {
