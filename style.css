@@ -1,4 +1,3 @@
-/* The page format*/
 * {
     margin: 0;
     padding: 0;
@@ -170,7 +169,7 @@ header {
 
 }
 
-.select{
+.select {
     position: relative;
     /* background-color: rgb(255, 30, 64); */
     top: 100%;
@@ -367,10 +366,8 @@ header {
     transition: none;
     transform: translateX(-400px);
 }
-.AdminButton {
-    width: 100%;
 
-.btn_bank{
+.btn_bank {
     width: 250px;
     height: 45px;
     background: #144c72;
@@ -381,51 +378,17 @@ header {
     font-size: 1em;
     color: #fff;
     font-weight: 500;
-    display: block;
-    margin-bottom: 10px;
-}
-.AdminMenu {
-    width: 20%;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    font-size: 1em;
-    font-weight: 500;
-}
-.tab {
-    width: 50%;
-    height: 100%;
-    float: top;
-    margin-right: 50%;
-    margin-bottom: 25%;
-    font: bold;
+
 }
 
-
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.navigation a {
-    margin-right: 10px;
-    text-decoration: none;
-    color: #333;
-}
-
-.tab {
-    
-}
-
-.image{
+.image {
     width: 250px;
     height: 250px;
     margin-top: 100px;
     position: relative;
 }
 
-.tab{
+.tab {
     width: 50%;
     height: 100%;
     margin-right: 0%;
@@ -450,20 +413,6 @@ header {
     border-collapse: collapse;
     width: 100%;
     margin-top: 30px;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.navigation a {
-  margin-right: 10px;
-  text-decoration: none;
-  color: #333;
-}
-
-.tab {
-  border-collapse: collapse;
-  width: 100%;
-  margin-top: 30px;
 }
 
 .tab th,
@@ -496,42 +445,16 @@ header {
     background-color: #e0e0e0;
 }
 
-  padding: 10px;
-  text-align: left;
+.tab td .repbtn {
+    background-color: rgb(81, 190, 9);
+    border-radius: 5px;
+    font-size: 12px;
+    height: 30px;
+    width: 50px;
+    color: white;
 }
 
-.tab th {
-  background-color: #3ca5c8;
-  font-weight: bold;
-}
-
-.tab td button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
- .tab td button ion-icon {
-  font-size: 20px;
-} 
-
-
-.tab tbody tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-.tab tbody tr:hover {
-  background-color: #e0e0e0;
-}
-.tab td .repbtn{
- background-color: rgb(81, 190, 9);
- border-radius: 5px;
- font-size: 12px;
- height: 30px;
- width: 50px;
- color: white;
-}
-.tab td .repbtn2{
+.tab td .repbtn2 {
     background-color: rgb(255, 0, 0);
     border-radius: 5px;
     font-size: 12px;
@@ -539,8 +462,9 @@ header {
     height: 30px;
     color: white;
     width: 40px;
-   }
-   .tab td .repbtn3{
+}
+
+.tab td .repbtn3 {
     background-color: rgb(3, 228, 221);
     border-radius: 5px;
     font-size: 12px;
@@ -548,8 +472,9 @@ header {
     height: 30px;
     width: 100px;
     color: white;
-   }
-.pop{
+}
+
+.pop {
     width: 30%;
     margin-top: 15%;
     margin-left: 35%;
@@ -559,22 +484,26 @@ header {
     font-style: oblique;
     background-color: #4682a7;
 }
-.pop2{
+
+.pop2 {
     margin-left: 20%;
     /* color: #144c72; */
     color: white;
 }
-.pop3{
+
+.pop3 {
     margin-top: 15%;
     margin-left: 35%;
-    
-}
-.popform{
 
-   margin-top: 15%;
 }
-.popinp{
-    width:100%;
+
+.popform {
+
+    margin-top: 15%;
+}
+
+.popinp {
+    width: 100%;
     height: 20px;
     border-color: #5740ca;
     padding: 12px;
@@ -582,24 +511,27 @@ header {
     margin-top: 40px;
     font-size: large;
 }
-.popinp2{
-    width:100%;
+
+.popinp2 {
+    width: 100%;
     height: 150px;
     border-color: #5740ca;
     padding: 12px;
     margin-top: 40px;
-   
+
 }
-.txt{
+
+.txt {
     width: 100%;
     margin-top: 10px;
     font-size: 15px;
     border-radius: 8px;
-    border-color:#5740ca;
+    border-color: #5740ca;
     border-width: 2px;
 
 }
-.popbtn{
+
+.popbtn {
     height: 40px;
     width: 70px;
     margin-top: 25%;
@@ -607,7 +539,8 @@ header {
     background-color: red;
     border-color: lightcoral;
 }
-.popbtn2{
+
+.popbtn2 {
 
     margin-bottom: 70px;
     width: 70px;
@@ -615,10 +548,11 @@ header {
     border-radius: 12px;
     background-color: green;
     border-color: lightgreen;
-    
+
 }
-.btns{
+
+.btns {
     margin-left: 63%;
     margin-top: 12%;
-    
+
 }
