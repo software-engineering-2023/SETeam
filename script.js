@@ -120,6 +120,7 @@ const login = () => {
     }
   }
   if (validLogin == true) {
+  if (validLogin == true && !(passElement == 123123)) {
     window.location = "./Page2.html";
   } else {
     alert("Wrong email or password");

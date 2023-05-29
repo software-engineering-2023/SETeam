@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bank</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h2 class="logo">Bank</h2>
+
+    <nav class="navigation">
+      <a paragraph="#">About</a>
+      <a paragraph onclick="goBack()">Services</a>
+      <button class="btnLogin-popup" onclick="location.href='main.html'">LogOut</button>
+    </nav>
+  </header>
+<div class ="pad">
+  <div class="image">
+    <img class="cardApps" src="card_apps.png" width="250px" height="250px"> </img>
+    <button type="submit" id="cardapp" class="btn_bank" onclick="viewRequests()">View Credit Card Applications</button>
+  </div>
+
+  <div class="image">
+    <img class="cardApps" src="replace.png" width="250px" height="250px"> </img>
+    <button type="submit" class="btn_bank" onclick="location.href='repReq.html'">View Replacement Requests</button>
+  </div>
+  <div class="image">
+    <img class="cardApps" src="loan_apps.png" width="250px" height="250px"> </img>
+    <button type="submit" class="btn_bank" onclick="location.href='viewLoanRequests.html'">View Loan Applications</button>
+  </div>
+
+  <div class="image">
+    <img class="cardApps" src="announce.png" width="250px" height="250px"> </img>
+    <button class = "btn" onclick="document.getElementById('popup').showModal()">Make An Announcement</button>
+
+<dialog class="pop" id="popup">
+  <h2 class="pop2">Make An Announcement!</h2>
+  <form class="popform">
+    <input class="popinp" type="text" name="Announcement Title" placeholder="Announcement Title">
+    <textarea class="txt" rows="5" cols="60" placeholder="Announcement Body"> </textarea>
+  </form>
+  <div class="btns">
+  <button class="popbtn" onclick="document.getElementById('popup').close()">Cancel</button>
+  <button class="popbtn2"onclick="document.getElementById('popup').close()">Submit</button>
+</div>
+</dialog>
+  </div>
+
+ </div>
+
+ </div>
+
+</div>
+</body>
+<script src="script(banker).js"> </script>
+
+</html>
