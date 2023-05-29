@@ -449,12 +449,21 @@ header {
  background-color: rgb(81, 190, 9);
  border-radius: 5px;
  font-size: 12px;
+ height: 30px;
 }
 .tab td .repbtn2{
-    background-color: rgb(247, 0, 0);
+    background-color: rgb(255, 0, 0);
     border-radius: 5px;
     font-size: 12px;
     border-color: lightcoral;
+    height: 30px;
+   }
+   .tab td .repbtn3{
+    background-color: rgb(3, 228, 221);
+    border-radius: 5px;
+    font-size: 12px;
+    border-color: lightcoral;
+    height: 30px;
    }
 .pop{
     width: 30%;
